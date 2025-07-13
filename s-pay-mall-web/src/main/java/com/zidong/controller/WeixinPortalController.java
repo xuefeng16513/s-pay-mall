@@ -3,6 +3,7 @@ package com.zidong.controller;
 import com.zidong.common.weixin.MessageTextEntity;
 import com.zidong.common.weixin.SignatureUtil;
 import com.zidong.common.weixin.XmlUtil;
+import com.zidong.service.ILoginService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.dom4j.Document;
@@ -11,6 +12,7 @@ import org.dom4j.io.SAXReader;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -30,6 +32,9 @@ public class WeixinPortalController {
     private String originalid;
     @Value("${weixin.config.token}")
     private String token;
+
+    @Resource
+    private ILoginService loginService;
 
     @GetMapping(value = "receive", produces = "text/plain;charset=utf-8")
     public String validate(@RequestParam(value = "signature", required = false) String signature,
@@ -65,6 +70,12 @@ public class WeixinPortalController {
             log.info("接收微信公众号信息请求{}开始 {}", openid, requestBody);
             // 消息转换
             MessageTextEntity message = XmlUtil.xmlToBean(requestBody, MessageTextEntity.class);
+
+            if ("event".equals(message.getMsgType ()) && "SCAN".equals(message.getEvent())) {
+                loginService.saveLoginState(message.getTicket(), openid);
+                return buildMessageTextEntity (openid, "登陆成功");
+            }
+
             return buildMessageTextEntity(openid, "我是复读机" + message.getContent());
         } catch (Exception e) {
             log.error("接收微信公众号信息请求{}失败 {}", openid, requestBody, e);

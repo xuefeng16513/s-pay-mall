@@ -1,0 +1,254 @@
+25-07-13.00:31:25.212 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 35880 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-13.00:31:25.214 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-13.00:31:25.986 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zidong]' package. Please check your configuration.
+25-07-13.00:31:26.380 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-13.00:31:26.387 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-13.00:31:26.387 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-13.00:31:26.387 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-13.00:31:26.474 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-13.00:31:26.475 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1223 ms
+25-07-13.00:31:26.629 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'weixinPortalController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zidong.service.ILoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+25-07-13.00:31:26.631 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-13.00:31:26.643 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+25-07-13.00:31:26.658 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.zidong.service.ILoginService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zidong.service.ILoginService' in your configuration.
+
+25-07-13.00:34:38.107 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 30828 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-13.00:34:38.109 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-13.00:34:38.762 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zidong]' package. Please check your configuration.
+25-07-13.00:34:39.141 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-13.00:34:39.148 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-13.00:34:39.148 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-13.00:34:39.150 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-13.00:34:39.239 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-13.00:34:39.239 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1099 ms
+25-07-13.00:34:39.371 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'weixinPortalController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zidong.service.ILoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+25-07-13.00:34:39.374 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-13.00:34:39.385 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+25-07-13.00:34:39.399 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.zidong.service.ILoginService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zidong.service.ILoginService' in your configuration.
+
+25-07-13.00:46:16.628 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 17404 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-13.00:46:16.629 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-13.00:46:17.266 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zidong]' package. Please check your configuration.
+25-07-13.00:46:17.610 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-13.00:46:17.617 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-13.00:46:17.618 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-13.00:46:17.618 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-13.00:46:17.695 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-13.00:46:17.695 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1031 ms
+25-07-13.00:46:17.994 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'weixinPortalController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wechatLoginServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'weixin.config.app-id' in value "${weixin.config.app-id}"
+25-07-13.00:46:17.996 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-13.00:46:18.006 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+25-07-13.00:46:18.027 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'weixinPortalController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wechatLoginServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'weixin.config.app-id' in value "${weixin.config.app-id}"
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.zidong.Application.main(Application.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wechatLoginServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'weixin.config.app-id' in value "${weixin.config.app-id}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 17 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'weixin.config.app-id' in value "${weixin.config.app-id}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 33 common frames omitted
+25-07-13.00:49:02.295 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 17172 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-13.00:49:02.297 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-13.00:49:02.854 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zidong]' package. Please check your configuration.
+25-07-13.00:49:03.140 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-13.00:49:03.146 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-13.00:49:03.146 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-13.00:49:03.146 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-13.00:49:03.218 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-13.00:49:03.218 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 890 ms
+25-07-13.00:49:03.841 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-13.00:49:03.856 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-13.00:49:03.868 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-13.00:49:03.878 [main            ] INFO  Application            - Started Application in 1.944 seconds (JVM running for 2.379)
+25-07-13.00:49:04.136 [RMI TCP Connection(2)-192.168.88.8] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-13.00:49:04.136 [RMI TCP Connection(2)-192.168.88.8] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-13.00:49:04.137 [RMI TCP Connection(2)-192.168.88.8] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-13.00:49:04.162 [RMI TCP Connection(4)-192.168.88.8] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-13.00:49:04.339 [RMI TCP Connection(4)-192.168.88.8] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-13.00:51:43.035 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-13.00:51:43.043 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-13.00:51:46.697 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 35328 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-13.00:51:46.699 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-13.00:51:47.258 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zidong]' package. Please check your configuration.
+25-07-13.00:51:47.564 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-13.00:51:47.570 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-13.00:51:47.570 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-13.00:51:47.570 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-13.00:51:47.645 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-13.00:51:47.645 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 914 ms
+25-07-13.00:51:48.249 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-13.00:51:48.266 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-13.00:51:48.278 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-13.00:51:48.289 [main            ] INFO  Application            - Started Application in 1.934 seconds (JVM running for 2.344)
+25-07-13.00:51:48.577 [RMI TCP Connection(2)-192.168.88.8] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-13.00:51:48.602 [RMI TCP Connection(4)-192.168.88.8] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-13.00:51:48.602 [RMI TCP Connection(4)-192.168.88.8] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-13.00:51:48.603 [RMI TCP Connection(4)-192.168.88.8] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-13.00:51:48.691 [RMI TCP Connection(2)-192.168.88.8] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-13.01:00:19.714 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-13.01:00:19.726 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-13.01:00:23.219 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 35372 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-13.01:00:23.221 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-13.01:00:23.802 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zidong]' package. Please check your configuration.
+25-07-13.01:00:24.139 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-13.01:00:24.146 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-13.01:00:24.146 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-13.01:00:24.146 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-13.01:00:24.227 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-13.01:00:24.227 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 973 ms
+25-07-13.01:00:24.926 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-13.01:00:24.941 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-13.01:00:24.953 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-13.01:00:24.963 [main            ] INFO  Application            - Started Application in 2.113 seconds (JVM running for 2.554)
+25-07-13.01:00:25.080 [RMI TCP Connection(3)-192.168.88.8] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-13.01:00:25.081 [RMI TCP Connection(3)-192.168.88.8] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-13.01:00:25.082 [RMI TCP Connection(3)-192.168.88.8] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-13.01:00:25.082 [RMI TCP Connection(1)-192.168.88.8] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-13.01:00:25.186 [RMI TCP Connection(1)-192.168.88.8] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-13.01:00:39.605 [http-nio-8080-exec-1] INFO  LoginController        - 生成微信扫码登录 ticket:gQHI7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyYnFWM0VvZE05MS0xSlRhcXhFMTcAAgR3PXNoAwQAjScA
+25-07-13.01:02:47.433 [http-nio-8080-exec-4] INFO  LoginController        - 扫码检测登录结果 ticket:gQHI7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyYnFWM0VvZE05MS0xSlRhcXhFMTcAAgR3PXNoAwQAjScA openidToken:null
+25-07-13.01:12:02.902 [http-nio-8080-exec-6] INFO  WeixinPortalController - 接收微信公众号信息请求ojbBBvvBAKC6-0dX3WEqAcjjzwPg开始 <xml><ToUserName><![CDATA[gh_e5d6b1e312f0]]></ToUserName>
+<FromUserName><![CDATA[ojbBBvvBAKC6-0dX3WEqAcjjzwPg]]></FromUserName>
+<CreateTime>1752383521</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[100601]]></EventKey>
+<Ticket><![CDATA[gQHI7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyYnFWM0VvZE05MS0xSlRhcXhFMTcAAgR3PXNoAwQAjScA]]></Ticket>
+</xml>
+25-07-13.01:12:14.647 [http-nio-8080-exec-8] INFO  LoginController        - 扫码检测登录结果 ticket:gQHI7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyYnFWM0VvZE05MS0xSlRhcXhFMTcAAgR3PXNoAwQAjScA openidToken:ojbBBvvBAKC6-0dX3WEqAcjjzwPg
+25-07-13.01:13:45.993 [http-nio-8080-exec-10] INFO  WeixinPortalController - 接收微信公众号信息请求ojbBBvvBAKC6-0dX3WEqAcjjzwPg开始 <xml><ToUserName><![CDATA[gh_e5d6b1e312f0]]></ToUserName>
+<FromUserName><![CDATA[ojbBBvvBAKC6-0dX3WEqAcjjzwPg]]></FromUserName>
+<CreateTime>1752383620</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[qqq]]></Content>
+<MsgId>25088100205663925</MsgId>
+</xml>
+25-07-13.01:13:46.994 [http-nio-8080-exec-3] INFO  WeixinPortalController - 接收微信公众号信息请求ojbBBvvBAKC6-0dX3WEqAcjjzwPg开始 <xml><ToUserName><![CDATA[gh_e5d6b1e312f0]]></ToUserName>
+<FromUserName><![CDATA[ojbBBvvBAKC6-0dX3WEqAcjjzwPg]]></FromUserName>
+<CreateTime>1752383620</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[qqq]]></Content>
+<MsgId>25088100205663925</MsgId>
+</xml>
+25-07-13.01:16:16.874 [http-nio-8080-exec-5] INFO  WeixinPortalController - 接收微信公众号信息请求ojbBBvvBAKC6-0dX3WEqAcjjzwPg开始 <xml><ToUserName><![CDATA[gh_e5d6b1e312f0]]></ToUserName>
+<FromUserName><![CDATA[ojbBBvvBAKC6-0dX3WEqAcjjzwPg]]></FromUserName>
+<CreateTime>1752383774</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[111]]></Content>
+<MsgId>25088106016247380</MsgId>
+</xml>
+25-07-13.01:20:19.259 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-13.01:20:19.269 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-13.01:20:21.744 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 17400 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-13.01:20:21.746 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-13.01:20:22.328 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zidong]' package. Please check your configuration.
+25-07-13.01:20:22.676 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-13.01:20:22.683 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-13.01:20:22.683 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-13.01:20:22.683 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-13.01:20:22.773 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-13.01:20:22.774 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 997 ms
+25-07-13.01:20:23.505 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-13.01:20:23.524 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-13.01:20:23.539 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-13.01:20:23.549 [main            ] INFO  Application            - Started Application in 2.16 seconds (JVM running for 2.597)
+25-07-13.01:20:23.637 [RMI TCP Connection(3)-192.168.88.8] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-13.01:20:23.637 [RMI TCP Connection(3)-192.168.88.8] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-13.01:20:23.638 [RMI TCP Connection(3)-192.168.88.8] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-13.01:20:23.664 [RMI TCP Connection(5)-192.168.88.8] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-13.01:20:23.792 [RMI TCP Connection(5)-192.168.88.8] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-13.01:20:30.736 [http-nio-8080-exec-1] INFO  WeixinPortalController - 接收微信公众号信息请求ojbBBvvBAKC6-0dX3WEqAcjjzwPg开始 <xml><ToUserName><![CDATA[gh_e5d6b1e312f0]]></ToUserName>
+<FromUserName><![CDATA[ojbBBvvBAKC6-0dX3WEqAcjjzwPg]]></FromUserName>
+<CreateTime>1752384027</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[111]]></Content>
+<MsgId>25088107936687831</MsgId>
+</xml>
+25-07-13.01:20:44.594 [http-nio-8080-exec-9] INFO  LoginController        - 生成微信扫码登录 ticket:gQF58DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyVXo2OUZSZE05MS0xSUlmcU5FMTcAAgQsQnNoAwQAjScA
+25-07-13.01:20:53.298 [http-nio-8080-exec-3] INFO  LoginController        - 扫码检测登录结果 ticket:gQF58DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyVXo2OUZSZE05MS0xSUlmcU5FMTcAAgQsQnNoAwQAjScA openidToken:null
+25-07-13.01:21:17.404 [http-nio-8080-exec-6] INFO  WeixinPortalController - 接收微信公众号信息请求ojbBBvvBAKC6-0dX3WEqAcjjzwPg开始 <xml><ToUserName><![CDATA[gh_e5d6b1e312f0]]></ToUserName>
+<FromUserName><![CDATA[ojbBBvvBAKC6-0dX3WEqAcjjzwPg]]></FromUserName>
+<CreateTime>1752384077</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[100601]]></EventKey>
+<Ticket><![CDATA[gQF58DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyVXo2OUZSZE05MS0xSUlmcU5FMTcAAgQsQnNoAwQAjScA]]></Ticket>
+</xml>
+25-07-13.01:22:16.097 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-13.01:22:16.102 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
