@@ -335,3 +335,4 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:953)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:823)
 	... 60 common frames omitted
+25-07-22.15:11:00.022 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zidong]' package. Please check your configuration.
