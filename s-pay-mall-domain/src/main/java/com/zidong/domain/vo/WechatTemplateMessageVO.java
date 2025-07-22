@@ -1,4 +1,4 @@
-package com.zidong.domain.po;
+package com.zidong.domain.vo;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,6 +1,6 @@
 package com.zidong.service.wechat;
 
-import com.zidong.domain.po.WechatTemplateMessageVO;
+import com.zidong.domain.vo.WechatTemplateMessageVO;
 import com.zidong.domain.req.WechatQrCodeReq;
 import com.zidong.domain.res.WechatQrCodeRes;
 import com.zidong.domain.res.WechatTokenRes;
