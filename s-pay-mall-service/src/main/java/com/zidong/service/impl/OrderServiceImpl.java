@@ -1,9 +1,11 @@
 package com.zidong.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.request.AlipayTradePagePayRequest;
+import com.google.common.eventbus.EventBus;
 import com.zidong.common.constants.Constants;
 import com.zidong.dao.IOrderDao;
 import com.zidong.domain.po.PayOrder;
@@ -20,6 +22,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 /*
 * @description 订单服务
@@ -36,6 +39,9 @@ public class OrderServiceImpl implements IOrderService {
 
     @Resource
     private AlipayClient alipayClient;
+
+    @Resource
+    private EventBus eventBus;
 
     @Value("${alipay.notify_url}")
     private String notifyUrl;
@@ -87,6 +93,31 @@ public class OrderServiceImpl implements IOrderService {
                 .orderId(orderId)
                 .payUrl(payOrder.getPayUrl())
                 .build();
+    }
+
+    @Override
+    public void changeOrderPaySuccess(String orderId) {
+        PayOrder payOrderReq = new PayOrder();
+        payOrderReq.setOrderId(orderId);
+        payOrderReq.setStatus(Constants.OrderStatusEnum.PAY_SUCCESS.getCode());
+        orderDao.changeOrderPaySuccess (payOrderReq);
+
+        eventBus.post (JSON.toJSONString(payOrderReq));
+    }
+
+    @Override
+    public List<String> queryNoPayNotifyOrder() {
+        return orderDao.queryNoPayNotifyOrder();
+    }
+
+    @Override
+    public List<String> queryTimeoutCloseOrderList() {
+        return orderDao.queryTimeoutCloseOrderList();
+    }
+
+    @Override
+    public boolean changeOrderClose(String orderId) {
+        return orderDao.changeOrderClose(orderId);
     }
 
     private PayOrder doPrePayOrder(String productName, String orderId, BigDecimal totalAmount) throws AlipayApiException {
