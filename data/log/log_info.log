@@ -452,3 +452,46 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 25-07-22.18:16:06.074 [RMI TCP Connection(4)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Start completed.
 25-07-22.18:16:18.501 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 25-07-22.18:16:18.507 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-22.20:29:45.166 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 31052 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-22.20:29:45.168 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-22.20:29:46.323 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-22.20:29:46.329 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-22.20:29:46.330 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-22.20:29:46.330 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-22.20:29:46.417 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-22.20:29:46.417 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1214 ms
+25-07-22.20:29:47.156 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-22.20:29:47.171 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-22.20:29:47.182 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-22.20:29:47.191 [main            ] INFO  Application            - Started Application in 2.393 seconds (JVM running for 2.992)
+25-07-22.20:29:47.293 [RMI TCP Connection(2)-10.193.205.232] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-22.20:29:47.293 [RMI TCP Connection(2)-10.193.205.232] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-22.20:29:47.293 [RMI TCP Connection(2)-10.193.205.232] INFO  DispatcherServlet      - Completed initialization in 0 ms
+25-07-22.20:29:47.314 [RMI TCP Connection(4)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-22.20:29:47.498 [RMI TCP Connection(4)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-22.20:32:22.876 [http-nio-8080-exec-2] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:10001 productId:10001
+25-07-22.20:32:23.044 [http-nio-8080-exec-2] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:10001 productId:10001 orderId:7000800855437193
+25-07-22.20:38:00.129 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-22.20:38:00.134 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-22.20:38:07.205 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 29800 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-22.20:38:07.206 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-22.20:38:07.955 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-22.20:38:07.959 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-22.20:38:07.960 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-22.20:38:07.960 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-22.20:38:08.025 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-22.20:38:08.025 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 792 ms
+25-07-22.20:38:08.660 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-22.20:38:08.675 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-22.20:38:08.691 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-22.20:38:08.700 [main            ] INFO  Application            - Started Application in 1.79 seconds (JVM running for 2.151)
+25-07-22.20:38:08.809 [RMI TCP Connection(3)-10.193.205.232] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-22.20:38:08.809 [RMI TCP Connection(3)-10.193.205.232] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-22.20:38:08.810 [RMI TCP Connection(3)-10.193.205.232] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-22.20:38:08.812 [RMI TCP Connection(2)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-22.20:38:08.950 [RMI TCP Connection(2)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-22.20:38:25.094 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:10001 productId:10001
+25-07-22.20:38:25.122 [http-nio-8080-exec-1] INFO  OrderServiceImpl       - 创建订单-存在，已存在未支付订单。userId:10001 productId:10001 orderId:7000800855437193
+25-07-22.20:38:25.123 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:10001 productId:10001 orderId:7000800855437193
+25-07-22.20:39:08.158 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-22.20:39:08.163 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
