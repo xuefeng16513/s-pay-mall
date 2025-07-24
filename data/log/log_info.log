@@ -1775,3 +1775,404 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 25-07-24.15:11:00.528 [scheduling-1    ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^10.193.205.232^_^Windows 11^_^2025-07-25 03:11:00^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=W8WuUc3OBq6R3krdltPwZESDFWvLf3UpcquWEBVNy4Odm4M8ubGNbtbw9WVqU9/2V3hcP9I500jySR+EZ0h2bj7/PqcFLSMdnhdkW3UzfKCIh43BUlo/eACLc8pUP3kGY4mRGdNLnRyPYDleLL/24g/ZzEbH2fLR0YicbtyZargZGE2imzpGGSgzckk+h5H5niKtoxP0JLn2o7qOfQ9PY2J9J7nUkxUatOPdf/XCix6Ujan385fGT8xxvn4kdU7iql5Thur7Y3B3rGvTN0W4B38swa4+fA53PryyxwR6/GmnQHY3eMASVzH5MO5zk4DYOwCCj50RhxZi2xhssB8JBA==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 03:11:00^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:traceId=0601ac3e17533842572911385206829&biz_content={"out_trade_no":"9220111925777540"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"9220111925777540","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"v3PVtecoE0OSntYwLhwo8krpSCPAivWzBzRKn2JHEEOLNWh+gV2AZG0SBY+AbgKLv5jcom2WtIiH0raf6NCnbk82NMxYUtkfkoM6bwZtFYqkHTt49LnB3biw0YWDUdzK3Rho7UdBHTPunehZPDtL8B1/8ZyCoRQ6IojZIY1N1cWX98X8E5BnA9tgPD4Usk4234WfoIZQKegWdrZRQgY9TUB1HVs8a03/ycVXWxec3Yrgw1lZzkzoxp3t7XubpMAA4JtL7emqZ12I330aHelqkz0/mtS+3ej6Q03Ae5Nn632Xa/lBvyELRo6/rNRoLMsN8bqY3xk4Bfr/CZf/c3GC1A=="}^_^9ms,503ms,9ms^_^trace_id:0601ac3e17533842572911385206829
 25-07-24.15:11:01.272 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 25-07-24.15:11:01.276 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-24.16:10:24.537 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 14712 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-24.16:10:24.538 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-24.16:10:25.735 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-24.16:10:25.742 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-24.16:10:25.742 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-24.16:10:25.742 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-24.16:10:25.834 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-24.16:10:25.834 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1260 ms
+25-07-24.16:10:26.764 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-24.16:10:26.785 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-24.16:10:26.798 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-24.16:10:26.812 [main            ] INFO  Application            - Started Application in 2.664 seconds (JVM running for 3.106)
+25-07-24.16:10:27.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:10:27.026 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-24.16:10:27.225 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-24.16:10:27.340 [RMI TCP Connection(5)-10.193.205.232] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-24.16:10:27.340 [RMI TCP Connection(5)-10.193.205.232] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-24.16:10:27.341 [RMI TCP Connection(5)-10.193.205.232] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-24.16:10:29.495 [scheduling-1    ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 11^_^2025-07-25 04:10:29^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=KKF2MgixbYIZB+AgPZ/+8nVzW2hKCqKTpIWrC2ZrwYTeHyK6owAQ357bJ/Hh8cY4yECE9nsaHgiTxqWKptzmzy1r3IgjV5Uey1rDVS2FqecpP7sOdG7tFRo6MzZkj3Y1bmw/Gn8Nxt8M0VJcsJYrh0VTJsSQLekPwUNW32mdEE4PlqrIEz8e+Mt1AZ46nYbfuATTqH0XzrV8cGCYM8Oj8Olgx+8oXWfSQsUNAVrfpy5KOS06WICBvxHlFJPVep7GWy6udl3vcBeV1ysds7AV1ztUOkTyrBMapt2oZYTrajm14uBlUWGo7hTYqddwIK1XOTA9H3sfuC3xLOoDcV0CJw==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 04:10:27^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:traceId=060379011753387825629236940542&biz_content={"out_trade_no":"9220111925777540"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"9220111925777540","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"v3PVtecoE0OSntYwLhwo8krpSCPAivWzBzRKn2JHEEOLNWh+gV2AZG0SBY+AbgKLv5jcom2WtIiH0raf6NCnbk82NMxYUtkfkoM6bwZtFYqkHTt49LnB3biw0YWDUdzK3Rho7UdBHTPunehZPDtL8B1/8ZyCoRQ6IojZIY1N1cWX98X8E5BnA9tgPD4Usk4234WfoIZQKegWdrZRQgY9TUB1HVs8a03/ycVXWxec3Yrgw1lZzkzoxp3t7XubpMAA4JtL7emqZ12I330aHelqkz0/mtS+3ej6Q03Ae5Nn632Xa/lBvyELRo6/rNRoLMsN8bqY3xk4Bfr/CZf/c3GC1A=="}^_^30ms,2182ms,25ms^_^trace_id:060379011753387825629236940542
+25-07-24.16:10:30.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:10:36.654 [scheduling-1    ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 11^_^2025-07-25 04:10:36^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=oHjVsRYSdbXz5YYkWJdKRJlZFRk+U/eJFUS9wfH4Qa+JxpnxhSFh9p1VsbyikKa2tMO2hfEqU/e1m+j53nkNOayGDVUYRVw8CjA6c+NBN13qoAfJiqgsW4L3G7T2sYl6Qnv/rq3ORE/I7AYjBFEjDLwl2uHO1uaRt0DzgMvN1z0l8IxQz4ougbTsXQfNuBTtWE3EM4n2rnp3KyQab1fQcw1tG7J6hAI0M0eFLNQEQDdnfQ1nazVsWF8xaUrS7ujCulpHBV/O/5LKVhkTc1KsD+QR1BQA0Jnv0IBrbk3yaJHJGCGVrc0gFK318/oaHYBucvbDc9E+x1T4e4oMdr4WMw==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 04:10:30^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:traceId=0601d58b1753387833097526916565&biz_content={"out_trade_no":"9220111925777540"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"9220111925777540","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"v3PVtecoE0OSntYwLhwo8krpSCPAivWzBzRKn2JHEEOLNWh+gV2AZG0SBY+AbgKLv5jcom2WtIiH0raf6NCnbk82NMxYUtkfkoM6bwZtFYqkHTt49LnB3biw0YWDUdzK3Rho7UdBHTPunehZPDtL8B1/8ZyCoRQ6IojZIY1N1cWX98X8E5BnA9tgPD4Usk4234WfoIZQKegWdrZRQgY9TUB1HVs8a03/ycVXWxec3Yrgw1lZzkzoxp3t7XubpMAA4JtL7emqZ12I330aHelqkz0/mtS+3ej6Q03Ae5Nn632Xa/lBvyELRo6/rNRoLMsN8bqY3xk4Bfr/CZf/c3GC1A=="}^_^13ms,6615ms,11ms^_^trace_id:0601d58b1753387833097526916565
+25-07-24.16:10:39.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:10:54.025 [scheduling-1    ] ERROR err                    - 2025-07-25 04:10:54^_^alipay.trade.query^_^null^_^10.193.205.232^_^Windows 11^_^alipay-sdk-java-4.38.157.ALL^_^https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.query&sign=o1Xb2Dw1ihHndkmAH1hC2Nfr5iLa1uaa%2FcHttRNQoRva4Og9C7IYfpOL%2FvOMqy%2BoC3aytmShxxIhV04dTgm9SQp1c4GZk3R6i1EyNealqGEeWoH4bZ6s3i0vp3nyJeYOP9e9XDmp5AyHAaC1oSW0F3QWrCq5UwK354l8NU9nRIj2wM9db9XQrJ42gvQ3uJHezFMwVhjQtvDZmqdW0VKx5kLLALrsgEqaLTMUFUVerclm5hA8cQ3PPUZKm6nJbvX%2BRpbkY5G3hXN3bAQ85k4b4hhrwPi00zEDGbscMpbIvWoZjYu7rbHuTarBAyuYKKujFk5ap3Dh3lRCIpsqqRoSaw%3D%3D&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25+04%3A10%3A39&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^^_^Read timed out
+25-07-24.16:10:54.027 [scheduling-1    ] ERROR NoPayNotifyOrderJob    - 检测未接收到或未正确处理的支付回调通知失败
+com.alipay.api.AlipayApiException: java.net.SocketTimeoutException: Read timed out
+	at com.alipay.api.AbstractAlipayClient.doPost(AbstractAlipayClient.java:1015)
+	at com.alipay.api.AbstractAlipayClient._execute(AbstractAlipayClient.java:921)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:395)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:377)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:372)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:366)
+	at com.zidong.job.NoPayNotifyOrderJob.exec(NoPayNotifyOrderJob.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2094)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2089)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:2088)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1646)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1626)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at com.alipay.api.internal.util.WebUtils.getResponseAsString(WebUtils.java:514)
+	at com.alipay.api.internal.util.WebUtils.doPost(WebUtils.java:181)
+	at com.alipay.api.internal.util.WebUtils.doPost(WebUtils.java:142)
+	at com.alipay.api.AbstractAlipayClient.doPost(AbstractAlipayClient.java:1003)
+	... 19 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:288)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:314)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1465)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1069)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:826)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:761)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1725)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1626)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:3293)
+	at java.base/java.net.URLConnection.getContentType(URLConnection.java:520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getContentType(HttpsURLConnectionImpl.java:376)
+	at com.alipay.api.internal.util.WebUtils.getResponseAsString(WebUtils.java:506)
+	... 22 common frames omitted
+25-07-24.16:10:57.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:10:57.493 [http-nio-8080-exec-2] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg
+25-07-24.16:10:57.498 [http-nio-8080-exec-2] INFO  OrderServiceImpl       - 创建订单-存在，已存在未支付订单。userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:100010090091 orderId:9220111925777540
+25-07-24.16:10:57.498 [http-nio-8080-exec-2] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:100010090091 orderId:9220111925777540
+25-07-24.16:10:58.628 [scheduling-1    ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^10.193.205.232^_^Windows 11^_^2025-07-25 04:10:58^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=geDiF+XBfxUwqOzTa5PkY00HCjeTf1dOueRaVYO8iusV0y7NxeKbK7qTI4JgntJSH6VtRxpMzeGB4VRKC1rfe6ATVBl03IqF1D5iOiHCu+xW7+18ra9HycRKprAcQ59xvpHshp2puVL/gNBmKoXsAXkQGhlWGzimtJo8d9VbgaMP8qR8fpeG/jxAPV9KUU/Apl6jCx2B8G413+yNUOzOlElaNVKhGdwSooRjyUg4yPFt7XIC7d6wjxCqJ66CaHrmi2bzCpVZtnUbIX5EeTVpA0IoxfIPLcWtTHvHKp0F/54qlL1vyyarLRGNj7scUqlTYaZncZRbLQADo+PeiEJw1w==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 04:10:57^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:traceId=0601ac3e17533878552656577206829&biz_content={"out_trade_no":"9220111925777540"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"9220111925777540","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"v3PVtecoE0OSntYwLhwo8krpSCPAivWzBzRKn2JHEEOLNWh+gV2AZG0SBY+AbgKLv5jcom2WtIiH0raf6NCnbk82NMxYUtkfkoM6bwZtFYqkHTt49LnB3biw0YWDUdzK3Rho7UdBHTPunehZPDtL8B1/8ZyCoRQ6IojZIY1N1cWX98X8E5BnA9tgPD4Usk4234WfoIZQKegWdrZRQgY9TUB1HVs8a03/ycVXWxec3Yrgw1lZzkzoxp3t7XubpMAA4JtL7emqZ12I330aHelqkz0/mtS+3ej6Q03Ae5Nn632Xa/lBvyELRo6/rNRoLMsN8bqY3xk4Bfr/CZf/c3GC1A=="}^_^19ms,1562ms,26ms^_^trace_id:0601ac3e17533878552656577206829
+25-07-24.16:11:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:11:00.685 [scheduling-1    ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^10.193.205.232^_^Windows 11^_^2025-07-25 04:11:00^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=FgBMtRfvB+0OjiDXh1X4my4Cda3iB6ALLM8Q7bHZYH/L/qAicfxlgnrsrOQhTDCEMSKCVWGd/553tglcWXRTMBJhEQaRQoGHN0Jn6XwZVzJYD3H86phiqcryJLjPoo+gVhZ3pGkD/XxFuPobrW6voC5eyNeyPaVE7GKmzG87xOWICg4K/jjlH4mGE8lOYge/XlKsAothJnFMBjZb4IjJsUGhs8UmE6uAsNutbe9J/AWHAugUeoyduJWErRzfpKVkGyIzGf3Hn4He2SwDlYH00nWQs8kErWvOcaDNRjcTLbpRzjrp34pGrdzAVm5raCxHgF71nVy8IgNZ7eDNqcSFIg==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 04:11:00^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:traceId=060389ba17533878573003805538480&biz_content={"out_trade_no":"9220111925777540"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"9220111925777540","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"v3PVtecoE0OSntYwLhwo8krpSCPAivWzBzRKn2JHEEOLNWh+gV2AZG0SBY+AbgKLv5jcom2WtIiH0raf6NCnbk82NMxYUtkfkoM6bwZtFYqkHTt49LnB3biw0YWDUdzK3Rho7UdBHTPunehZPDtL8B1/8ZyCoRQ6IojZIY1N1cWX98X8E5BnA9tgPD4Usk4234WfoIZQKegWdrZRQgY9TUB1HVs8a03/ycVXWxec3Yrgw1lZzkzoxp3t7XubpMAA4JtL7emqZ12I330aHelqkz0/mtS+3ej6Q03Ae5Nn632Xa/lBvyELRo6/rNRoLMsN8bqY3xk4Bfr/CZf/c3GC1A=="}^_^15ms,634ms,19ms^_^trace_id:060389ba17533878573003805538480
+25-07-24.16:11:03.016 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:11:18.054 [scheduling-1    ] ERROR err                    - 2025-07-25 04:11:18^_^alipay.trade.query^_^null^_^10.193.205.232^_^Windows 11^_^alipay-sdk-java-4.38.157.ALL^_^https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.query&sign=NmHLHFqnDi3y%2B22sr7pL7402cO3ZejYVYOf%2BnmjADcoQgu9NXVPCHg14RB3nfR734C2kP0WzRAzuBqv6ULFopDDod2ghtSGQuVKGyByLAaOeNiAh5A%2F49dc%2FbcaOZOEP7cKEzhk18MGZoS5WHnux7ydoVZkwQqhY0R07wIzPwoqQfOHsJcnvKnum%2BtBlII3I6pCWjpZsdRLPD7nTyF%2BKLQqLfLWFh0cLFP8Gb48VgFVKXBt5yPCydB9JQExZ0bYTx5koUrsCAtllGrHSSo3LPEBaQo%2BSETb%2BINpbUR%2FKyMDY3g8NZ5U6CdLNUXD%2BUhTQIcP6FiRH3pzDUUmisfczGg%3D%3D&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25+04%3A11%3A03&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^^_^Read timed out
+25-07-24.16:11:18.054 [scheduling-1    ] ERROR NoPayNotifyOrderJob    - 检测未接收到或未正确处理的支付回调通知失败
+com.alipay.api.AlipayApiException: java.net.SocketTimeoutException: Read timed out
+	at com.alipay.api.AbstractAlipayClient.doPost(AbstractAlipayClient.java:1015)
+	at com.alipay.api.AbstractAlipayClient._execute(AbstractAlipayClient.java:921)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:395)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:377)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:372)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:366)
+	at com.zidong.job.NoPayNotifyOrderJob.exec(NoPayNotifyOrderJob.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2094)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2089)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:2088)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1646)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1626)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at com.alipay.api.internal.util.WebUtils.getResponseAsString(WebUtils.java:514)
+	at com.alipay.api.internal.util.WebUtils.doPost(WebUtils.java:181)
+	at com.alipay.api.internal.util.WebUtils.doPost(WebUtils.java:142)
+	at com.alipay.api.AbstractAlipayClient.doPost(AbstractAlipayClient.java:1003)
+	... 19 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:288)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:314)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1465)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1069)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:826)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:761)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1725)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1626)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:3293)
+	at java.base/java.net.URLConnection.getContentType(URLConnection.java:520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getContentType(HttpsURLConnectionImpl.java:376)
+	at com.alipay.api.internal.util.WebUtils.getResponseAsString(WebUtils.java:506)
+	... 22 common frames omitted
+25-07-24.16:11:21.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:11:22.012 [scheduling-1    ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^10.193.205.232^_^Windows 11^_^2025-07-25 04:11:22^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=XKhmLgB5kq0/Q2O/vWqRXPqvNBdnkK/DhDf/TjXbRK1zPwxXeyUoUn8TSX2y4N8esAX95KfrYVOE7dOUSuaijk8qHj3Bg8pW81MTBe+Hnr3grmyTnH7dIqesaOnPqqITbLXny9ANCetM3+d1We6ABjpbyTLBFyuXFO5aMpz5aYB3B1RZCeeKGCRTogWuSGsTMpXadgt5DWF6AXZufWwkYILeOPHXyZ8FJoIsMNZBWdCBvVgPkss9ZQJOhX2qatZVam/9sBMxEcUoeH7XXiSP1JZ6XHPoTzXcnsw1nMSts8RjM0Y4wtDzJTCPXYveP4EDEYPXWHHtJGPjAf87GgzMng==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 04:11:21^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:traceId=060379011753387878807257840542&biz_content={"out_trade_no":"9220111925777540"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"9220111925777540","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"v3PVtecoE0OSntYwLhwo8krpSCPAivWzBzRKn2JHEEOLNWh+gV2AZG0SBY+AbgKLv5jcom2WtIiH0raf6NCnbk82NMxYUtkfkoM6bwZtFYqkHTt49LnB3biw0YWDUdzK3Rho7UdBHTPunehZPDtL8B1/8ZyCoRQ6IojZIY1N1cWX98X8E5BnA9tgPD4Usk4234WfoIZQKegWdrZRQgY9TUB1HVs8a03/ycVXWxec3Yrgw1lZzkzoxp3t7XubpMAA4JtL7emqZ12I330aHelqkz0/mtS+3ej6Q03Ae5Nn632Xa/lBvyELRo6/rNRoLMsN8bqY3xk4Bfr/CZf/c3GC1A=="}^_^11ms,969ms,14ms^_^trace_id:060379011753387878807257840542
+25-07-24.16:11:24.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:11:25.494 [scheduling-1    ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^10.193.205.232^_^Windows 11^_^2025-07-25 04:11:25^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=ktDq7c35CaIHPpPbK+6suUbB90U+lqnQrXCpwwcJOuOv39L4Xh4d6mC9el0vF2fbjcKONy2HNTlv1Us3TtiLVkqDau2t8A8dn6lV3sPUrqdcokJucbnMBLMJW3FH07qsH14DgLHqKbALtX/K1WSm8cvM4ZnbyVm5I0qcnn4PtzUq3bDSgWBP9xzCDrTX73EueLsOeOxbS8GL+KGmd85UmVmr0dlRN2adWPAOQIDOckG5fTbW3LRy0pBNPP7Nw2LAq2UpEjeNFpzefQI5hnFy+UYlntvls14KaIEk77iOekg9PywkBQzmcL0qJ+8PmZ7BKLwGRjEvA6k8ZqNvB57atQ==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 04:11:24^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:traceId=060379011753387882210258740542&biz_content={"out_trade_no":"9220111925777540"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"9220111925777540","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"v3PVtecoE0OSntYwLhwo8krpSCPAivWzBzRKn2JHEEOLNWh+gV2AZG0SBY+AbgKLv5jcom2WtIiH0raf6NCnbk82NMxYUtkfkoM6bwZtFYqkHTt49LnB3biw0YWDUdzK3Rho7UdBHTPunehZPDtL8B1/8ZyCoRQ6IojZIY1N1cWX98X8E5BnA9tgPD4Usk4234WfoIZQKegWdrZRQgY9TUB1HVs8a03/ycVXWxec3Yrgw1lZzkzoxp3t7XubpMAA4JtL7emqZ12I330aHelqkz0/mtS+3ej6Q03Ae5Nn632Xa/lBvyELRo6/rNRoLMsN8bqY3xk4Bfr/CZf/c3GC1A=="}^_^13ms,1462ms,9ms^_^trace_id:060379011753387882210258740542
+25-07-24.16:11:27.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:11:27.536 [scheduling-1    ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^10.193.205.232^_^Windows 11^_^2025-07-25 04:11:27^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=HU2joAvKXfYN9j36/HJByUJa9IYF2mmISyApjWCYYO489rtXr1UnRO3Bj7V7xGiQy2rXpNoEGJo0Z5zMCY3twi5uVq+A9AXzQHE5swTKPuKi0uqTD9vjaoyfVduIC4YOAVpw2jl7S30vWMfr7R5X81mAR0h96A+Fvt4EilDs83MKsIxqj8enPRpn4mX4dLHgwCcu8z8KynYrle5MxgNT8MDYA3Bpdlf7loDZ02YiD1l2pnOi0uuOZTsCpI/XAzN/G16XX7bPjyseob3n/PEAmivUIdYN9tZmW0qTnISjSEN5RMg5M0vjj3GuwaZP2wYksnzyd1aUgXpsBoHj5Z9r9Q==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 04:11:27^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:traceId=0601ac3e17533878843236693206829&biz_content={"out_trade_no":"9220111925777540"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"9220111925777540","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"v3PVtecoE0OSntYwLhwo8krpSCPAivWzBzRKn2JHEEOLNWh+gV2AZG0SBY+AbgKLv5jcom2WtIiH0raf6NCnbk82NMxYUtkfkoM6bwZtFYqkHTt49LnB3biw0YWDUdzK3Rho7UdBHTPunehZPDtL8B1/8ZyCoRQ6IojZIY1N1cWX98X8E5BnA9tgPD4Usk4234WfoIZQKegWdrZRQgY9TUB1HVs8a03/ycVXWxec3Yrgw1lZzkzoxp3t7XubpMAA4JtL7emqZ12I330aHelqkz0/mtS+3ej6Q03Ae5Nn632Xa/lBvyELRo6/rNRoLMsN8bqY3xk4Bfr/CZf/c3GC1A=="}^_^17ms,497ms,9ms^_^trace_id:0601ac3e17533878843236693206829
+25-07-24.16:11:30.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:11:35.660 [http-nio-8080-exec-3] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg
+25-07-24.16:11:35.663 [http-nio-8080-exec-3] INFO  OrderServiceImpl       - 创建订单-存在，已存在未支付订单。userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:100010090091 orderId:9220111925777540
+25-07-24.16:11:35.663 [http-nio-8080-exec-3] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:100010090091 orderId:9220111925777540
+25-07-24.16:11:45.019 [scheduling-1    ] ERROR err                    - 2025-07-25 04:11:45^_^alipay.trade.query^_^null^_^10.193.205.232^_^Windows 11^_^alipay-sdk-java-4.38.157.ALL^_^https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.query&sign=UcLwXSgpBckkAvrhc%2Be65%2Btk99Y9UQ0V14l0mIz9JF0FGwwrDcgyeUPevuzlp%2F4EgFboTl2%2BLC0aPDCA93fSRlKGE%2F15tY0%2FpHnhsaSUklUcK0MuNIsElXgBNom4dnjWtbJUZ%2Bx%2FA2MeX5ftAxCRqU6xIlifgHvlOfqLJ9QqN3GcI1HEJbM%2FP%2BZXZ%2BpYdtEyDBjKPPVFGACPS3Cxs9l6Vf6YulJ3YtT0hsYalEWwEnLRxjLrWresXAwnNLxmvYL4Qcr4rsfBnx77sG9zayuXkqlORQtVMVMOUWEFfssW5%2FEAh7XUAc%2FLJuEKRd0pOnyCx91CPD0NWI%2FKjKar6gFHPQ%3D%3D&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25+04%3A11%3A30&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^^_^Read timed out
+25-07-24.16:11:45.020 [scheduling-1    ] ERROR NoPayNotifyOrderJob    - 检测未接收到或未正确处理的支付回调通知失败
+com.alipay.api.AlipayApiException: java.net.SocketTimeoutException: Read timed out
+	at com.alipay.api.AbstractAlipayClient.doPost(AbstractAlipayClient.java:1015)
+	at com.alipay.api.AbstractAlipayClient._execute(AbstractAlipayClient.java:921)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:395)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:377)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:372)
+	at com.alipay.api.AbstractAlipayClient.execute(AbstractAlipayClient.java:366)
+	at com.zidong.job.NoPayNotifyOrderJob.exec(NoPayNotifyOrderJob.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2094)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2089)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:2088)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1646)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1626)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at com.alipay.api.internal.util.WebUtils.getResponseAsString(WebUtils.java:514)
+	at com.alipay.api.internal.util.WebUtils.doPost(WebUtils.java:181)
+	at com.alipay.api.internal.util.WebUtils.doPost(WebUtils.java:142)
+	at com.alipay.api.AbstractAlipayClient.doPost(AbstractAlipayClient.java:1003)
+	... 19 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:288)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:314)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1465)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1069)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:826)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:761)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1725)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1626)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:3293)
+	at java.base/java.net.URLConnection.getContentType(URLConnection.java:520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getContentType(HttpsURLConnectionImpl.java:376)
+	at com.alipay.api.internal.util.WebUtils.getResponseAsString(WebUtils.java:506)
+	... 22 common frames omitted
+25-07-24.16:11:48.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:11:49.065 [scheduling-1    ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^10.193.205.232^_^Windows 11^_^2025-07-25 04:11:49^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=sLFErIImPjN84YCPL6pKZzyFwhGIq9+XvpRSuNk8/EPpoyHUlOkTB4fJbKorDWHh6nNfPwL8T5yju++57Ryh8AC8/KqVyQPKyTT5IBMozmyzZ8Rz07Oxj2RJEbERYaSSDvpT4ktyEZelkNjg7vXCqnRk157uFxP0RX0XVTe0tSP5gNE3Ne946B8+HdmzlN8tXrJAvSlQFIj6h84Gar/TRK8AheVyQD65mIaBorVzjjhxl3dho3hHzOyolDvHvVL69uFyvPnEm1LLVxqLEEgkSBCwPqjb8EslV0YhLLKQKSq85+ASlXWURui7egezwCwiYliVemE/CqnHCou6hJAIUw==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 04:11:48^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:traceId=060d2b35175338790577328045993&biz_content={"out_trade_no":"9220111925777540"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"9220111925777540","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"v3PVtecoE0OSntYwLhwo8krpSCPAivWzBzRKn2JHEEOLNWh+gV2AZG0SBY+AbgKLv5jcom2WtIiH0raf6NCnbk82NMxYUtkfkoM6bwZtFYqkHTt49LnB3biw0YWDUdzK3Rho7UdBHTPunehZPDtL8B1/8ZyCoRQ6IojZIY1N1cWX98X8E5BnA9tgPD4Usk4234WfoIZQKegWdrZRQgY9TUB1HVs8a03/ycVXWxec3Yrgw1lZzkzoxp3t7XubpMAA4JtL7emqZ12I330aHelqkz0/mtS+3ej6Q03Ae5Nn632Xa/lBvyELRo6/rNRoLMsN8bqY3xk4Bfr/CZf/c3GC1A=="}^_^24ms,1003ms,22ms^_^trace_id:060d2b35175338790577328045993
+25-07-24.16:11:51.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:11:51.490 [scheduling-1    ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^10.193.205.232^_^Windows 11^_^2025-07-25 04:11:51^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=M++gp9GssoHrTrbQdt/FRNbK+z/t2gPOxlMA8It3n2S7Nge6u+GSuGuld+a8xq7nbeOTTaBaJ1dUHA/vOCZL83CkgomnvbR4IPxAC3s+NwozFmfO52DoWGjBQ9EruV2/ZbTGu/49H1YtaiiPfnWkPkmQOQusE84i3wjhqoeIZVxQYKgu8eGCJfJKDAZ3LLkOxB9Wm8wNZkJ0W//CgOBDK2HTwNM8eL71R0ITzrZMePxuoFEv9UWeJoyepSlcBu3hH88hF/iEY8VYkHw83gpYxJ54vj84Jdi1pccIcAAdddM+6yi8Flft/yZyL89nARGVUtDtLke39kniHt5sg/dwnw==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 04:11:51^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:traceId=06013ec2175338790831311841619331&biz_content={"out_trade_no":"9220111925777540"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"9220111925777540","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"v3PVtecoE0OSntYwLhwo8krpSCPAivWzBzRKn2JHEEOLNWh+gV2AZG0SBY+AbgKLv5jcom2WtIiH0raf6NCnbk82NMxYUtkfkoM6bwZtFYqkHTt49LnB3biw0YWDUdzK3Rho7UdBHTPunehZPDtL8B1/8ZyCoRQ6IojZIY1N1cWX98X8E5BnA9tgPD4Usk4234WfoIZQKegWdrZRQgY9TUB1HVs8a03/ycVXWxec3Yrgw1lZzkzoxp3t7XubpMAA4JtL7emqZ12I330aHelqkz0/mtS+3ej6Q03Ae5Nn632Xa/lBvyELRo6/rNRoLMsN8bqY3xk4Bfr/CZf/c3GC1A=="}^_^28ms,442ms,16ms^_^trace_id:06013ec2175338790831311841619331
+25-07-24.16:11:54.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:11:54.591 [scheduling-1    ] ERROR err                    - ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^10.193.205.232^_^Windows 11^_^2025-07-25 04:11:54^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=H+6bE/zGgHaXEiolgnCagZ06OU36DFr6X10xbCjco6qRfqHK+CWZlobIAjKG5ExN7AF/+jNEpBTKQIrJABm5I4u977sjqebTf/if/yldQjWYpXZzxfo7Gr8cXEzc/nCc/u3U6PwCryDzWL/3MdU+p8fuz78Kk1EUA4ZkfZPNQTTFwbx5qrkFi2JdX6OCLDsZlsNHLoulGvpmez605gZ/CMp0IPnC3tNORp02rutn8PFumj3s3ziOk3rLFUdMkPNqcxo27AivuViIfJDVnf3SnrN8r3l8wmUT/DHZ/NZ4Gvg4L73LQlJKGc0WTfBIQ68WvOX3XyW08hzeUaNKS+czNA==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 04:11:54^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:traceId=0601ac3e17533879113106803206829&biz_content={"out_trade_no":"9220111925777540"}^_^Body:{"alipay_trade_query_response":{"msg":"Business Failed","code":"40004","out_trade_no":"9220111925777540","sub_msg":"交易不存在","sub_code":"ACQ.TRADE_NOT_EXIST","receipt_amount":"0.00","point_amount":"0.00","buyer_pay_amount":"0.00","invoice_amount":"0.00"},"sign":"v3PVtecoE0OSntYwLhwo8krpSCPAivWzBzRKn2JHEEOLNWh+gV2AZG0SBY+AbgKLv5jcom2WtIiH0raf6NCnbk82NMxYUtkfkoM6bwZtFYqkHTt49LnB3biw0YWDUdzK3Rho7UdBHTPunehZPDtL8B1/8ZyCoRQ6IojZIY1N1cWX98X8E5BnA9tgPD4Usk4234WfoIZQKegWdrZRQgY9TUB1HVs8a03/ycVXWxec3Yrgw1lZzkzoxp3t7XubpMAA4JtL7emqZ12I330aHelqkz0/mtS+3ej6Q03Ae5Nn632Xa/lBvyELRo6/rNRoLMsN8bqY3xk4Bfr/CZf/c3GC1A=="}^_^18ms,539ms,26ms^_^trace_id:0601ac3e17533879113106803206829
+25-07-24.16:11:57.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:11:57.657 [scheduling-1    ] INFO  info                   - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=M7tB8SwkPgt5vtej+vn1LmFwadF4aCxtT5ex0nPLwAe1lzCWKwmpBXQldT36v2P0mpx3yE/aElBR9XxfeiWvafh6d5wmtGj1F77jie0ppsHfxSwUJdKwcpoNarK5szo1bCe/Sg2Wmo7837UGb/ujgQCow1nN/yVKJ/keYDfaQZ8eaeaKDjV1ONPqvtet6xr9LOrG7C3K3pz4snWda2NzkHqftwVu2KVOL4bnAB8cmDoecryQA+9oq4RNtJO1KBQ3btjYl3BTr0QnXoSsvZduIybzTHPeD50jskb005mDDbTdsBHJass0ytLaQ5HVAgCUKq/2CCpOO0Xgi7y38RdZ6w==&version=1.0&app_id=9021000150643663&sign_type=RSA2&timestamp=2025-07-25 04:11:57^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json^_^ApplicationParams:biz_content={"out_trade_no":"9220111925777540"}^_^23ms,591ms,24ms^_^trace_id:060d2b35175338791431128465993
+25-07-24.16:11:57.832 [scheduling-1    ] INFO  OrderPaySuccessListener - 收到支付成功消息，可以做接下来的事情，如；发货、充值、开户员、返利 {"orderId":"9220111925777540","status":"PAY_SUCCESS"}
+25-07-24.16:12:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:03.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:06.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:08.206 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，消息接收 TRADE_SUCCESS
+25-07-24.16:12:08.207 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，交易名称: 测试商品
+25-07-24.16:12:08.207 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，交易状态: TRADE_SUCCESS
+25-07-24.16:12:08.207 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，支付宝交易凭证号: 2025072522001405280506191358
+25-07-24.16:12:08.207 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，商户订单号: 9220111925777540
+25-07-24.16:12:08.207 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，交易金额: 1.68
+25-07-24.16:12:08.207 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，买家在支付宝唯一id: 2088722073005284
+25-07-24.16:12:08.207 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，买家付款时间: 2025-07-25 04:12:01
+25-07-24.16:12:08.207 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，买家付款金额: 1.68
+25-07-24.16:12:08.207 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，支付回调，更新订单 9220111925777540
+25-07-24.16:12:08.211 [http-nio-8080-exec-4] INFO  OrderPaySuccessListener - 收到支付成功消息，可以做接下来的事情，如；发货、充值、开户员、返利 {"orderId":"9220111925777540","status":"PAY_SUCCESS"}
+25-07-24.16:12:09.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:12.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:15.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:18.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:21.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:24.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:27.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:30.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:33.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:36.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:39.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:42.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:45.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:48.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:51.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:54.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:12:57.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:03.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:06.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:09.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:12.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:15.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:18.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:21.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:24.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:27.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:30.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:33.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:36.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:39.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:42.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:45.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:48.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:51.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:54.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:13:57.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:03.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:06.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:09.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:12.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:15.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:18.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:21.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:24.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:27.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:30.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:33.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:36.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:39.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:42.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:45.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:48.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:51.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:54.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:14:57.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:03.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:06.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:09.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:11.410 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-24.16:15:11.414 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-24.16:15:14.251 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 19720 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-24.16:15:14.252 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-24.16:15:15.197 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-24.16:15:15.202 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-24.16:15:15.202 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-24.16:15:15.203 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-24.16:15:15.284 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-24.16:15:15.284 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1001 ms
+25-07-24.16:15:16.092 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-24.16:15:16.111 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-24.16:15:16.123 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-24.16:15:16.137 [main            ] INFO  Application            - Started Application in 2.203 seconds (JVM running for 2.577)
+25-07-24.16:15:16.691 [RMI TCP Connection(1)-10.193.205.232] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-24.16:15:16.691 [RMI TCP Connection(1)-10.193.205.232] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-24.16:15:16.692 [RMI TCP Connection(1)-10.193.205.232] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-24.16:15:16.695 [RMI TCP Connection(3)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-24.16:15:16.855 [RMI TCP Connection(3)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-24.16:15:18.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:21.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:24.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:27.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:30.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:31.675 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg
+25-07-24.16:15:31.833 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:100010090091 orderId:4171651814045993
+25-07-24.16:15:32.378 [http-nio-8080-exec-3] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg
+25-07-24.16:15:32.382 [http-nio-8080-exec-3] INFO  OrderServiceImpl       - 创建订单-存在，已存在未支付订单。userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:100010090091 orderId:4171651814045993
+25-07-24.16:15:32.382 [http-nio-8080-exec-3] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:100010090091 orderId:4171651814045993
+25-07-24.16:15:33.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:36.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:39.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:42.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:45.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:48.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:51.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:54.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:57.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:15:59.526 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，消息接收 TRADE_SUCCESS
+25-07-24.16:15:59.528 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，交易名称: 测试商品
+25-07-24.16:15:59.528 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，交易状态: TRADE_SUCCESS
+25-07-24.16:15:59.529 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，支付宝交易凭证号: 2025072522001405280506198112
+25-07-24.16:15:59.530 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，商户订单号: 4171651814045993
+25-07-24.16:15:59.531 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，交易金额: 1.68
+25-07-24.16:15:59.532 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，买家在支付宝唯一id: 2088722073005284
+25-07-24.16:15:59.532 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，买家付款时间: 2025-07-25 04:15:54
+25-07-24.16:15:59.532 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，买家付款金额: 1.68
+25-07-24.16:15:59.532 [http-nio-8080-exec-4] INFO  AliPayController       - 支付回调，支付回调，更新订单 4171651814045993
+25-07-24.16:15:59.560 [http-nio-8080-exec-4] INFO  OrderPaySuccessListener - 收到支付成功消息，可以做接下来的事情，如；发货、充值、开户员、返利 {"orderId":"4171651814045993","status":"PAY_SUCCESS"}
+25-07-24.16:16:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:03.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:06.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:09.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:12.016 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:15.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:18.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:21.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:24.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:27.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:30.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:33.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:36.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:39.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:42.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:45.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:48.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:51.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:54.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:16:57.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:03.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:06.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:09.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:12.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:15.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:18.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:21.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:24.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:27.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:30.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:33.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:35.999 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:39.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:42.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-24.16:17:45.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知

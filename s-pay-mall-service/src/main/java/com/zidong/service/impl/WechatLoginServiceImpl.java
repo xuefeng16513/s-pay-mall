@@ -85,7 +85,7 @@ public class WechatLoginServiceImpl implements ILoginService {
         WechatTemplateMessageVO.put(data, WechatTemplateMessageVO.TemplateKey.USER, openid);
 
         WechatTemplateMessageVO templateMessageDTO = new WechatTemplateMessageVO(openid, template_id);
-        templateMessageDTO.setUrl("https://gaga.plus");
+        templateMessageDTO.setUrl("https://github.com/xuefeng16513/s-pay-mall");
         templateMessageDTO.setData(data);
 
         Call<Void> call = weixinApiService.sendMessage(accessToken, templateMessageDTO);
