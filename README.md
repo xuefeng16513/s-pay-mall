@@ -112,9 +112,3 @@ java -jar target/s-pay-mall.jar
 
 - 微信模板通知：
   - 支付成功后通过公众号向用户发送模板消息
-
----
-
-## 📄 License
-
-本项目基于 [MIT License](LICENSE) 开源发布，欢迎使用与二次开发。
