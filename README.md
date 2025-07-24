@@ -56,7 +56,7 @@ git clone https://github.com/xuefeng16513/s-pay-mall.git
 cd s-pay-mall
 ```
 
-### 2. 配置数据库与Redis
+### 2. 配置数据库
 
 请在 `application.yml` 中修改以下配置：
 
@@ -66,9 +66,7 @@ spring:
     url: jdbc:mysql://localhost:3306/pay_mall?useSSL=false
     username: root
     password: your_password
-  redis:
-    host: localhost
-    port: 6379
+
 ```
 
 ### 3. 导入SQL脚本
