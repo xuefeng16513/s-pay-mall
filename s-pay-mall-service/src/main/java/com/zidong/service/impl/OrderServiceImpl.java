@@ -107,7 +107,7 @@ public class OrderServiceImpl implements IOrderService {
 //                .status(Constants.OrderStatusEnum.CREATE.getCode())
 //                .build());
 
-        // 正常构建订单（但不写入数据库）
+        // 构建订单
         ProductVO productVO = productRPC.queryProductByProductId(shopCartReq.getProductId());
 //        String orderId = RandomStringUtils.randomNumeric(16);
 
@@ -121,7 +121,7 @@ public class OrderServiceImpl implements IOrderService {
                 .status(Constants.OrderStatusEnum.PAY_WAIT.getCode())
                 .build();
 
-//        // 生成支付链接（调用原有 doPrePayOrder）
+//        // 生成支付链接
 //        PayOrder payOrder = doPrePayOrder(ProductVO.getProductName(), orderId, productVO.getPrice());
 
         //创建支付单
