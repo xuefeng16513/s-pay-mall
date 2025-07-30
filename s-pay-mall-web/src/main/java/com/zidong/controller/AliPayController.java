@@ -1,19 +1,24 @@
 package com.zidong.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.internal.util.AlipaySignature;
 import com.zidong.common.constants.Constants;
 import com.zidong.common.response.Response;
 import com.zidong.controller.dto.CreatePayRequestDTO;
+import com.zidong.dao.IOrderDao;
+import com.zidong.domain.po.PayOrder;
 import com.zidong.domain.req.ShopCartReq;
 import com.zidong.domain.res.PayOrderRes;
 import com.zidong.service.IOrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,6 +27,12 @@ import java.util.Map;
 @CrossOrigin("*")
 @RequestMapping("/api/v1/alipay/")
 public class AliPayController {
+
+    @Resource
+    private StringRedisTemplate stringRedisTemplate;
+
+    @Resource
+    private IOrderDao orderDao;
 
     @Value("${alipay.alipay_public_key}")
     private String alipayPublicKey;
@@ -104,9 +115,45 @@ public class AliPayController {
         log.info("支付回调，买家付款金额: {}", params.get("buyer_pay_amount"));
         log.info("支付回调，支付回调，更新订单 {}", tradeNo);
 
-        orderService.changeOrderPaySuccess (tradeNo);
+        // 从 Redis 读取订单
+        String orderKey = "order:temp:" + tradeNo;
+        String orderJson = stringRedisTemplate.opsForValue().get(orderKey);
+        if (orderJson == null) {
+            log.error("支付成功，但Redis中找不到订单数据，orderId={}", tradeNo);
+            return "false";
+        }
+        PayOrder payOrder = JSON.parseObject(orderJson, PayOrder.class);
+        try {
+            // 写入数据库
+            orderDao.insert(payOrder);
+
+            // 更新订单状态字段为 PAID
+            orderService.changeOrderPaySuccess(tradeNo);
+
+            // 更新 Redis 状态缓存（供前端轮询）
+//            String statusKey = "order:status:" + tradeNo;
+//            stringRedisTemplate.opsForValue().set(orderKey, "PAID", Duration.ofMinutes(30));
+//            stringRedisTemplate.opsForValue().set(orderKey, "PAID");
+
+            // 删除临时订单缓存
+            stringRedisTemplate.delete(orderKey);
+            log.info("订单{}已支付成功，已从Redis中删除临时订单缓存，存入数据库中", tradeNo);
+
+        } catch (Exception e) {
+            log.error("写入订单失败", e);
+            return "false";
+        }
 
         return "success";
+
+
+//        orderService.changeOrderPaySuccess (tradeNo);
+//
+//        String redisKey = "order:status:" + tradeNo;
+//        stringRedisTemplate.opsForValue().set(redisKey, "PAID", Duration.ofMinutes(30));
+
+
+//        return "success";
     }
 
 

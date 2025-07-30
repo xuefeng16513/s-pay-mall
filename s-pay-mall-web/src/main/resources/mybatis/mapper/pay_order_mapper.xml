@@ -19,9 +19,9 @@
 
     <insert id="insert" parameterType="com.zidong.domain.po.PayOrder">
         insert into pay_order(user_id, product_id, product_name, order_id, order_time,
-        total_amount, status, create_time, update_time)
+        total_amount, status, pay_url, create_time, update_time)
         values(#{userId}, #{productId}, #{productName}, #{orderId}, #{orderTime},
-        #{totalAmount}, #{status}, now(), now())
+        #{totalAmount}, #{status}, #{payUrl}, now(), now())
     </insert>
     <update id="updateOrderPayInfo">
         update pay_order set pay_url = #{payUrl}, status = #{status}, update_time = now()
