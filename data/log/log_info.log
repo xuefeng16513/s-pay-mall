@@ -4467,3 +4467,879 @@ Caused by: java.lang.IllegalArgumentException: Malformed \uxxxx encoding.
 25-07-30.17:43:06.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
 25-07-30.17:43:08.446 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 25-07-30.17:43:08.450 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-30.20:19:18.906 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 27896 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-30.20:19:18.908 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-30.20:19:19.498 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-30.20:19:19.500 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-30.20:19:19.521 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-07-30.20:19:20.018 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-30.20:19:20.023 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-30.20:19:20.024 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-30.20:19:20.024 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-30.20:19:20.098 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-30.20:19:20.098 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1157 ms
+25-07-30.20:19:20.780 [main            ] INFO  WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+25-07-30.20:19:21.021 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-30.20:19:21.038 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-30.20:19:21.049 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-30.20:19:21.061 [main            ] INFO  Application            - Started Application in 2.48 seconds (JVM running for 2.972)
+25-07-30.20:19:21.198 [RMI TCP Connection(2)-10.193.205.232] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-30.20:19:21.198 [RMI TCP Connection(2)-10.193.205.232] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-30.20:19:21.199 [RMI TCP Connection(2)-10.193.205.232] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-30.20:19:21.200 [RMI TCP Connection(1)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-30.20:19:21.377 [RMI TCP Connection(1)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-30.20:19:21.725 [lettuce-nioEventLoop-4-1] WARN  RedisReactiveHealthIndicator - Redis health check failed
+org.springframework.data.redis.RedisSystemException: Cannot read Redis info; nested exception is java.lang.IllegalArgumentException: Malformed \uxxxx encoding.
+	at org.springframework.data.redis.connection.convert.Converters.toProperties(Converters.java:106)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+	at io.lettuce.core.RedisPublisher$ImmediateSubscriber.onNext(RedisPublisher.java:886)
+	at io.lettuce.core.RedisPublisher$RedisSubscription.onNext(RedisPublisher.java:291)
+	at io.lettuce.core.RedisPublisher$SubscriptionCommand.doOnComplete(RedisPublisher.java:773)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:65)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:63)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:747)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:682)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:599)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.IllegalArgumentException: Malformed \uxxxx encoding.
+	at java.base/java.util.Properties.loadConvert(Properties.java:662)
+	at java.base/java.util.Properties.load0(Properties.java:456)
+	at java.base/java.util.Properties.load(Properties.java:382)
+	at org.springframework.data.redis.connection.convert.Converters.toProperties(Converters.java:104)
+	... 29 common frames omitted
+25-07-30.20:19:24.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:19:27.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:19:30.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:19:33.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:19:36.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:19:38.105 [http-nio-8080-exec-4] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg
+25-07-30.20:19:38.251 [http-nio-8080-exec-4] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:100010090091 orderId:3340670880811697
+25-07-30.20:19:39.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:19:42.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:19:45.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:19:48.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:19:51.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:19:54.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:19:57.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:00.008 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 任务；超时30分钟订单关闭
+25-07-30.20:20:00.021 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，超时30分钟订单关闭，暂无超时未支付订单 orderIds is null
+25-07-30.20:20:00.022 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:03.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:06.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:09.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:12.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:15.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:18.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:21.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:24.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:27.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:30.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:33.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:36.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:39.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:42.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:45.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:48.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:51.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:54.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:20:57.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:03.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:06.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:09.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:12.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:15.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:18.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:21.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:24.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:27.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:30.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:33.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:36.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:39.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:42.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:45.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:48.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:51.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:54.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:21:57.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:03.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:06.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:09.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:12.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:15.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:18.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:21.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:24.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:27.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:30.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:33.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:36.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:39.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:42.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:45.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:48.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:51.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:54.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:22:57.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:03.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:06.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:09.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:12.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:15.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:17.999 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:21.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:24.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:27.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:30.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:33.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:36.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:39.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:42.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:45.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:48.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:51.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:54.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:23:57.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:03.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:06.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:09.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:12.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:15.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:18.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:21.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:24.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:27.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:30.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:33.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:36.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:39.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:42.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:45.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:48.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:51.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:54.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:24:57.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:03.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:06.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:09.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:12.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:15.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:18.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:21.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:24.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:27.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:30.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:33.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:36.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:39.022 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:42.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:45.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:48.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:51.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:54.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:25:57.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:03.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:06.019 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:09.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:12.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:15.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:18.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:21.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:24.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:27.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:30.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:33.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:36.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:39.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:42.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:45.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:48.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:51.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:54.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:26:57.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:03.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:06.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:09.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:12.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:15.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:18.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:21.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:24.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:27.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:30.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:33.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:36.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:39.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:42.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:45.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:48.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:51.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:54.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:27:57.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:00.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:03.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:06.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:09.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:12.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:15.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:18.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:21.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:24.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:27.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:30.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:33.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:36.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:39.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:42.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:45.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:48.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:51.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:54.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:28:57.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:03.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:06.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:09.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:12.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:15.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:18.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:21.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:24.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:27.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:30.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:33.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:36.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:39.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:42.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:45.022 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:48.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:51.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:54.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:29:57.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:00.003 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 任务；超时30分钟订单关闭
+25-07-30.20:30:00.005 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，超时30分钟订单关闭，暂无超时未支付订单 orderIds is null
+25-07-30.20:30:03.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:06.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:09.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:12.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:15.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:18.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:21.016 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:24.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:27.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:30.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:33.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:36.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:39.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:42.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:45.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:48.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:51.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:54.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:30:57.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:03.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:06.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:09.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:12.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:15.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:18.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:21.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:24.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:27.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:30.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:33.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:36.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:39.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:42.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:45.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:48.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:51.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:54.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:31:57.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:03.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:06.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:09.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:12.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:15.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:18.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:21.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:24.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:27.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:30.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:33.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:36.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:39.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:42.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:45.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:48.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:51.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:54.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:32:57.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:03.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:06.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:09.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:12.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:15.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:18.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:21.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:24.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:27.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:30.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:33.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:36.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:39.017 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:42.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:45.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:48.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:51.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:54.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:33:57.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:03.016 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:06.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:09.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:12.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:15.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:18.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:21.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:24.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:27.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:30.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:33.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:36.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:39.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:42.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:45.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:48.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:51.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:54.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:34:57.016 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:03.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:06.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:09.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:12.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:15.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:18.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:21.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:24.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:27.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:30.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:33.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:36.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:39.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:42.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:45.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:48.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:51.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:54.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:35:57.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:03.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:06.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:09.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:12.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:15.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:18.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:21.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:24.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:27.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:30.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:33.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:36.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:39.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:42.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:45.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:48.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:51.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:54.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:36:57.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:03.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:06.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:09.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:12.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:15.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:18.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:21.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:24.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:27.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:30.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:33.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:36.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:39.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:42.016 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:45.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:48.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:51.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:54.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:37:57.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:03.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:06.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:09.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:12.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:15.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:18.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:21.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:24.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:27.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:30.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:33.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:36.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:39.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:42.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:45.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:48.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:51.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:54.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:38:57.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:03.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:06.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:09.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:12.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:15.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:18.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:21.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:24.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:27.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:30.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:33.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:36.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:39.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:42.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:45.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:48.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:51.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:54.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:39:57.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:00.002 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 任务；超时30分钟订单关闭
+25-07-30.20:40:00.004 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，超时30分钟订单关闭，暂无超时未支付订单 orderIds is null
+25-07-30.20:40:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:03.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:06.016 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:09.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:12.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:15.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:18.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:21.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:24.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:27.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:30.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:33.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:36.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:39.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:42.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:45.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:48.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:51.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:54.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:40:57.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:03.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:06.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:09.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:12.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:15.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:18.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:21.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:24.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:27.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:30.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:33.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:36.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:39.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:42.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:45.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:48.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:51.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:54.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:41:57.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:03.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:06.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:09.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:12.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:15.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:18.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:21.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:24.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:27.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:30.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:33.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:36.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:39.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:42.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:45.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:48.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:51.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:54.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:42:57.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:03.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:06.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:09.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:12.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:15.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:18.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:21.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:24.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:27.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:30.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:33.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:36.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:39.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:42.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:45.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:48.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:51.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:54.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:43:57.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:03.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:06.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:09.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:12.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:15.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:18.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:21.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:24.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:27.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:30.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:33.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:36.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:39.020 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:42.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:45.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:48.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:51.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:54.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:44:57.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:03.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:06.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:09.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:12.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:15.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:18.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:21.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:24.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:27.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:30.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:33.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:36.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:39.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:42.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:45.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:48.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:51.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:54.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:45:57.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:03.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:06.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:09.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:12.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:15.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:18.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:21.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:24.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:27.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:30.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:33.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:36.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:39.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:39.760 [http-nio-8080-exec-8] INFO  AliPayController       - 支付回调，消息接收 TRADE_SUCCESS
+25-07-30.20:46:39.760 [http-nio-8080-exec-8] INFO  AliPayController       - 支付回调，交易名称: 测试商品
+25-07-30.20:46:39.760 [http-nio-8080-exec-8] INFO  AliPayController       - 支付回调，交易状态: TRADE_SUCCESS
+25-07-30.20:46:39.760 [http-nio-8080-exec-8] INFO  AliPayController       - 支付回调，支付宝交易凭证号: 2025073122001405280506237189
+25-07-30.20:46:39.760 [http-nio-8080-exec-8] INFO  AliPayController       - 支付回调，商户订单号: 3340670880811697
+25-07-30.20:46:39.760 [http-nio-8080-exec-8] INFO  AliPayController       - 支付回调，交易金额: 1.68
+25-07-30.20:46:39.760 [http-nio-8080-exec-8] INFO  AliPayController       - 支付回调，买家在支付宝唯一id: 2088722073005284
+25-07-30.20:46:39.760 [http-nio-8080-exec-8] INFO  AliPayController       - 支付回调，买家付款时间: 2025-07-31 08:46:36
+25-07-30.20:46:39.760 [http-nio-8080-exec-8] INFO  AliPayController       - 支付回调，买家付款金额: 1.68
+25-07-30.20:46:39.760 [http-nio-8080-exec-8] INFO  AliPayController       - 支付回调，支付回调，更新订单 3340670880811697
+25-07-30.20:46:39.796 [http-nio-8080-exec-8] INFO  OrderPaySuccessListener - 收到支付成功消息，可以做接下来的事情，如；发货、充值、开户员、返利 {"orderId":"3340670880811697","status":"PAY_SUCCESS"}
+25-07-30.20:46:39.797 [http-nio-8080-exec-8] INFO  AliPayController       - 订单3340670880811697已支付成功，已从Redis中删除临时订单缓存，存入数据库中
+25-07-30.20:46:42.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:45.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:48.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:51.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:46:52.699 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-30.20:46:52.705 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-30.20:46:56.272 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 33424 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-30.20:46:56.274 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-30.20:46:56.853 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-30.20:46:56.855 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-30.20:46:56.876 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-30.20:46:57.311 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-30.20:46:57.318 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-30.20:46:57.318 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-30.20:46:57.318 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-30.20:46:57.397 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-30.20:46:57.397 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1094 ms
+25-07-30.20:46:58.098 [main            ] INFO  WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+25-07-30.20:46:58.335 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-30.20:46:58.353 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-30.20:46:58.366 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-30.20:46:58.380 [main            ] INFO  Application            - Started Application in 2.414 seconds (JVM running for 2.803)
+25-07-30.20:46:58.803 [RMI TCP Connection(2)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-30.20:46:58.835 [RMI TCP Connection(5)-10.193.205.232] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-30.20:46:58.835 [RMI TCP Connection(5)-10.193.205.232] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-30.20:46:58.836 [RMI TCP Connection(5)-10.193.205.232] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-30.20:46:58.976 [RMI TCP Connection(2)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-30.20:46:59.317 [lettuce-nioEventLoop-4-1] WARN  RedisReactiveHealthIndicator - Redis health check failed
+org.springframework.data.redis.RedisSystemException: Cannot read Redis info; nested exception is java.lang.IllegalArgumentException: Malformed \uxxxx encoding.
+	at org.springframework.data.redis.connection.convert.Converters.toProperties(Converters.java:106)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+	at io.lettuce.core.RedisPublisher$ImmediateSubscriber.onNext(RedisPublisher.java:886)
+	at io.lettuce.core.RedisPublisher$RedisSubscription.onNext(RedisPublisher.java:291)
+	at io.lettuce.core.RedisPublisher$SubscriptionCommand.doOnComplete(RedisPublisher.java:773)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:65)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:63)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:747)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:682)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:599)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.IllegalArgumentException: Malformed \uxxxx encoding.
+	at java.base/java.util.Properties.loadConvert(Properties.java:662)
+	at java.base/java.util.Properties.load0(Properties.java:456)
+	at java.base/java.util.Properties.load(Properties.java:382)
+	at org.springframework.data.redis.connection.convert.Converters.toProperties(Converters.java:104)
+	... 29 common frames omitted
+25-07-30.20:47:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:03.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:06.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:07.706 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg
+25-07-30.20:47:07.831 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:100010090091 orderId:5475433248564466
+25-07-30.20:47:09.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:12.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:15.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:18.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:21.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:24.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:27.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:30.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:33.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:36.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:39.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:42.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:42.448 [http-nio-8080-exec-2] INFO  AliPayController       - 支付回调，消息接收 TRADE_SUCCESS
+25-07-30.20:47:42.449 [http-nio-8080-exec-2] INFO  AliPayController       - 支付回调，交易名称: 测试商品
+25-07-30.20:47:42.449 [http-nio-8080-exec-2] INFO  AliPayController       - 支付回调，交易状态: TRADE_SUCCESS
+25-07-30.20:47:42.449 [http-nio-8080-exec-2] INFO  AliPayController       - 支付回调，支付宝交易凭证号: 2025073122001405280506235378
+25-07-30.20:47:42.449 [http-nio-8080-exec-2] INFO  AliPayController       - 支付回调，商户订单号: 5475433248564466
+25-07-30.20:47:42.449 [http-nio-8080-exec-2] INFO  AliPayController       - 支付回调，交易金额: 1.68
+25-07-30.20:47:42.449 [http-nio-8080-exec-2] INFO  AliPayController       - 支付回调，买家在支付宝唯一id: 2088722073005284
+25-07-30.20:47:42.449 [http-nio-8080-exec-2] INFO  AliPayController       - 支付回调，买家付款时间: 2025-07-31 08:47:39
+25-07-30.20:47:42.449 [http-nio-8080-exec-2] INFO  AliPayController       - 支付回调，买家付款金额: 1.68
+25-07-30.20:47:42.449 [http-nio-8080-exec-2] INFO  AliPayController       - 支付回调，支付回调，更新订单 5475433248564466
+25-07-30.20:47:42.487 [http-nio-8080-exec-2] INFO  OrderPaySuccessListener - 收到支付成功消息，可以做接下来的事情，如；发货、充值、开户员、返利 {"orderId":"5475433248564466","status":"PAY_SUCCESS"}
+25-07-30.20:47:45.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:48.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:51.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:54.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:47:57.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:03.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:06.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:09.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:12.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:15.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:18.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:21.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:24.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:27.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:30.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:33.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:36.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:39.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:42.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:45.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:48.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:51.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:54.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:48:57.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:03.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:06.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:09.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:12.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:15.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:18.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:21.017 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:24.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:27.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:30.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:33.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:36.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:39.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:41.276 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-30.20:49:41.284 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-30.20:49:44.429 [main            ] INFO  Application            - Starting Application using Java 17.0.15 on Zidxu with PID 9396 (C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev\s-pay-mall-web\target\classes started by 34864 in C:\Users\34864\IdeaProjects\sPayMall\s-pay-mall-mvc-wechat-portal-dev)
+25-07-30.20:49:44.431 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-30.20:49:44.990 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-30.20:49:44.992 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-30.20:49:45.010 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+25-07-30.20:49:45.414 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-30.20:49:45.418 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-30.20:49:45.418 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-30.20:49:45.418 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-30.20:49:45.493 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-30.20:49:45.494 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1035 ms
+25-07-30.20:49:46.146 [main            ] INFO  WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+25-07-30.20:49:46.387 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-30.20:49:46.406 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-30.20:49:46.417 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-30.20:49:46.428 [main            ] INFO  Application            - Started Application in 2.324 seconds (JVM running for 2.666)
+25-07-30.20:49:46.881 [RMI TCP Connection(2)-10.193.205.232] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-30.20:49:46.881 [RMI TCP Connection(2)-10.193.205.232] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-30.20:49:46.883 [RMI TCP Connection(2)-10.193.205.232] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-30.20:49:46.884 [RMI TCP Connection(1)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-30.20:49:47.030 [RMI TCP Connection(1)-10.193.205.232] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-30.20:49:47.367 [lettuce-nioEventLoop-4-1] WARN  RedisReactiveHealthIndicator - Redis health check failed
+org.springframework.data.redis.RedisSystemException: Cannot read Redis info; nested exception is java.lang.IllegalArgumentException: Malformed \uxxxx encoding.
+	at org.springframework.data.redis.connection.convert.Converters.toProperties(Converters.java:106)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+	at io.lettuce.core.RedisPublisher$ImmediateSubscriber.onNext(RedisPublisher.java:886)
+	at io.lettuce.core.RedisPublisher$RedisSubscription.onNext(RedisPublisher.java:291)
+	at io.lettuce.core.RedisPublisher$SubscriptionCommand.doOnComplete(RedisPublisher.java:773)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:65)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:63)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:747)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:682)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:599)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.IllegalArgumentException: Malformed \uxxxx encoding.
+	at java.base/java.util.Properties.loadConvert(Properties.java:662)
+	at java.base/java.util.Properties.load0(Properties.java:456)
+	at java.base/java.util.Properties.load(Properties.java:382)
+	at org.springframework.data.redis.connection.convert.Converters.toProperties(Converters.java:104)
+	... 29 common frames omitted
+25-07-30.20:49:48.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:51.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:54.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:49:57.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:00.002 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 任务；超时30分钟订单关闭
+25-07-30.20:50:00.031 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，超时30分钟订单关闭，暂无超时未支付订单 orderIds is null
+25-07-30.20:50:01.749 [http-nio-8080-exec-6] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg
+25-07-30.20:50:01.855 [http-nio-8080-exec-6] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:ojbBBvvBAKC6-0dX3WEqAcjjzwPg productId:100010090091 orderId:8700339309641776
+25-07-30.20:50:03.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:06.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:09.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:12.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:15.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:18.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:21.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:24.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:27.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:30.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:33.016 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:36.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:39.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:42.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:45.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:48.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:51.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:54.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:50:57.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:00.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:00.769 [http-nio-8080-exec-5] INFO  AliPayController       - 支付回调，消息接收 TRADE_SUCCESS
+25-07-30.20:51:00.770 [http-nio-8080-exec-5] INFO  AliPayController       - 支付回调，交易名称: 测试商品
+25-07-30.20:51:00.770 [http-nio-8080-exec-5] INFO  AliPayController       - 支付回调，交易状态: TRADE_SUCCESS
+25-07-30.20:51:00.770 [http-nio-8080-exec-5] INFO  AliPayController       - 支付回调，支付宝交易凭证号: 2025073122001405280506234196
+25-07-30.20:51:00.770 [http-nio-8080-exec-5] INFO  AliPayController       - 支付回调，商户订单号: 8700339309641776
+25-07-30.20:51:00.770 [http-nio-8080-exec-5] INFO  AliPayController       - 支付回调，交易金额: 1.68
+25-07-30.20:51:00.770 [http-nio-8080-exec-5] INFO  AliPayController       - 支付回调，买家在支付宝唯一id: 2088722073005284
+25-07-30.20:51:00.770 [http-nio-8080-exec-5] INFO  AliPayController       - 支付回调，买家付款时间: 2025-07-31 08:50:58
+25-07-30.20:51:00.770 [http-nio-8080-exec-5] INFO  AliPayController       - 支付回调，买家付款金额: 1.68
+25-07-30.20:51:00.770 [http-nio-8080-exec-5] INFO  AliPayController       - 支付回调，支付回调，更新订单 8700339309641776
+25-07-30.20:51:00.798 [http-nio-8080-exec-5] INFO  OrderPaySuccessListener - 收到支付成功消息，可以做接下来的事情，如；发货、充值、开户员、返利 {"orderId":"8700339309641776","status":"PAY_SUCCESS"}
+25-07-30.20:51:00.801 [http-nio-8080-exec-5] INFO  AliPayController       - 订单状态更新为 PAY_SUCCESS
+25-07-30.20:51:03.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:06.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:09.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:12.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:15.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:18.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:21.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:24.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:27.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:30.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:33.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:36.008 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:39.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:42.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:45.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+25-07-30.20:51:47.661 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-30.20:51:47.666 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

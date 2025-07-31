@@ -131,13 +131,15 @@ public class AliPayController {
             orderService.changeOrderPaySuccess(tradeNo);
 
             // 更新 Redis 状态缓存（供前端轮询）
-//            String statusKey = "order:status:" + tradeNo;
+            payOrder.setStatus(Constants.OrderStatusEnum.PAY_SUCCESS.getCode());
+            stringRedisTemplate.opsForValue().set(orderKey, JSON.toJSONString(payOrder));
+            log.info("订单状态更新为 {}", payOrder.getStatus ());
 //            stringRedisTemplate.opsForValue().set(orderKey, "PAID", Duration.ofMinutes(30));
 //            stringRedisTemplate.opsForValue().set(orderKey, "PAID");
 
             // 删除临时订单缓存
-            stringRedisTemplate.delete(orderKey);
-            log.info("订单{}已支付成功，已从Redis中删除临时订单缓存，存入数据库中", tradeNo);
+//            stringRedisTemplate.delete(orderKey);
+//            log.info("订单{}已支付成功，已从Redis中删除临时订单缓存，存入数据库中", tradeNo);
 
         } catch (Exception e) {
             log.error("写入订单失败", e);
