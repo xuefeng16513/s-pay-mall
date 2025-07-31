@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 微信服务对接，对接地址：<a href="http://xfg-studio.natapp1.cc/api/v1/weixin/portal/receive">/api/v1/weixin/portal/receive</a>
+ * 微信服务对接，对接地址：<a href="http://webnet.natapp1.cc/api/v1/weixin/portal/receive">/api/v1/weixin/portal/receive</a>
  * <p>
  *  http://webnet.natapp1.cc/api/v1/weixin/portal/receive/
  */
