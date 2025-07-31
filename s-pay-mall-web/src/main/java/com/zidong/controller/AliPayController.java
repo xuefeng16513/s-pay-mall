@@ -132,7 +132,7 @@ public class AliPayController {
 
             // 更新 Redis 状态缓存（供前端轮询）
             payOrder.setStatus(Constants.OrderStatusEnum.PAY_SUCCESS.getCode());
-            stringRedisTemplate.opsForValue().set(orderKey, JSON.toJSONString(payOrder));
+            stringRedisTemplate.opsForValue().set(orderKey, JSON.toJSONString(payOrder), Duration.ofMinutes(30));
             log.info("订单状态更新为 {}", payOrder.getStatus ());
 //            stringRedisTemplate.opsForValue().set(orderKey, "PAID", Duration.ofMinutes(30));
 //            stringRedisTemplate.opsForValue().set(orderKey, "PAID");
